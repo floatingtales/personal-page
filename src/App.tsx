@@ -1,33 +1,47 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import {
+  Center,
+  Flex,
+  Header,
+  Paper,
+  rem,
+  Title,
+  Text,
+  Stack,
+} from "@mantine/core";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <>
+      <Stack>
+        <Header height={rem(60)}>
+          <Center h={rem(60)}>
+            <Paper w={"95vw"}>
+              <Flex justify={"space-between"}>
+                <Title order={1}>Dillan Martin</Title>
+                <Center>
+                  <Flex justify={"space-between"}>
+                    <Text>About</Text>
+                    <Text>Experience</Text>
+                    <Text>Works</Text>
+                    <Text>Contact Me!</Text>
+                  </Flex>
+                </Center>
+              </Flex>
+            </Paper>
+          </Center>
+        </Header>
+        <Paper h={"100vh"}>
+          <Center h={"100vh"}>
+            <Stack>
+              <Center>
+                <Title>Hi, I'm Dillan!</Title>
+              </Center>
+              <Text>A coding ninja who will code for pizza!</Text>
+            </Stack>
+          </Center>
+        </Paper>
+      </Stack>
+    </>
   );
 }
 
