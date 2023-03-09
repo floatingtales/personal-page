@@ -2,7 +2,7 @@ import { MantineProvider } from "@mantine/core";
 import App from "./App";
 import "./fonts.css";
 
-function Wrapper() {
+const MantineWrapper = () => {
   return (
     <MantineProvider
       theme={{
@@ -10,7 +10,7 @@ function Wrapper() {
         fontFamily: "Dina, sans-serif",
         fontFamilyMonospace: "Dina, monospace, sans-serif",
         headings: {
-          fontFamily: "SpaceMono, Dina, sans-serif",
+          fontFamily: "ChakraPetch, Dina, sans-serif",
         },
       }}
       withGlobalStyles
@@ -19,6 +19,6 @@ function Wrapper() {
       <App />
     </MantineProvider>
   );
-}
+};
 
-export default Wrapper;
+export default MantineWrapper;

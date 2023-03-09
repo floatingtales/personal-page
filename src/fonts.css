@@ -1,6 +1,21 @@
 @font-face {
+  font-family: ChakraPetch;
+  src: url(./assets/font/ChakraPetch-Medium.ttf);
+}
+
+@font-face {
   font-family: Dina;
   src: url(./assets/font/DinaRemasterII.ttc);
+}
+
+@font-face {
+  font-family: PTMono;
+  src: url(./assets/font/PTMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: ShareTech;
+  src: url(./assets/font/ShareTechMono-Regular.ttf);
 }
 
 @font-face {
