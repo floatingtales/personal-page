@@ -1,13 +1,12 @@
 import { Center, Flex, Text } from "@mantine/core";
-import { useRef } from "react";
 
 const SelfFooter = () => {
   const year = new Date().getFullYear();
   return (
     <Center h={"100%"}>
-      <Flex w={"100%"} direction={"column"} align={"center"} justify={"center"}>
+      <Flex align={"center"} direction={"column"} justify={"center"} w={"100%"}>
         <Text size={"sm"}>
-          This website is created with React.js and Mantine
+          Handcrafted by me with Vite, React.js and Mantine
         </Text>
         <Text size={"sm"}>©️ Copyright {year} - All rights Reserved</Text>
       </Flex>

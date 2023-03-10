@@ -1,23 +1,61 @@
-import { Center, Flex, Paper, Title, Text, Button } from "@mantine/core";
+import {
+  Center,
+  Flex,
+  Paper,
+  Title,
+  MediaQuery,
+  Burger,
+  Anchor,
+} from "@mantine/core";
 
-const SelfNavbar = () => {
+import NavbarProps from "./interfaces/INavbarInterface";
+
+const SelfNavbar = ({
+  scrollToAbout,
+  scrollToContact,
+  scrollToProjects,
+  opened,
+  toggle,
+}: NavbarProps) => {
   return (
     <Center h={"100%"}>
       <Paper w={"95vw"}>
-        <Flex justify={"space-between"} h={"100%"} align={"center"}>
+        <Flex align={"center"} h={"100%"} justify={"space-between"}>
           <Title order={3}>Dillan Martin</Title>
-          <Flex
-            direction={"row"}
-            justify={"center"}
-            align={"center"}
-            h={"100%"}
-            gap={"sm"}
-          >
-            <Button>Test Button</Button>
-            <Text>About</Text>
-            <Text>Works</Text>
-            <Text>Contact Me!</Text>
-          </Flex>
+          <MediaQuery smallerThan={"sm"} styles={{ display: "none" }}>
+            <Flex
+              align={"center"}
+              direction={"row"}
+              gap={"sm"}
+              h={"100%"}
+              justify={"center"}
+            >
+              <Anchor
+                onClick={() => {
+                  scrollToAbout({ alignment: "center" });
+                }}
+              >
+                About
+              </Anchor>
+              <Anchor
+                onClick={() => {
+                  scrollToProjects({ alignment: "center" });
+                }}
+              >
+                Projects
+              </Anchor>
+              <Anchor
+                onClick={() => {
+                  scrollToContact({ alignment: "center" });
+                }}
+              >
+                Contact
+              </Anchor>
+            </Flex>
+          </MediaQuery>
+          <MediaQuery largerThan={"sm"} styles={{ display: "none" }}>
+            <Burger onClick={toggle} opened={opened} />
+          </MediaQuery>
         </Flex>
       </Paper>
     </Center>

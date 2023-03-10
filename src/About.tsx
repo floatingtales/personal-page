@@ -1,9 +1,8 @@
-import { Flex, Title, Text, Button } from "@mantine/core";
-import { IconBrandLinkedin, IconBrandGithub } from "@tabler/icons-react";
+import { Flex, Title, Text } from "@mantine/core";
 
 const About = () => {
   return (
-    <Flex direction={"column"} justify={"center"} gap={"sm"}>
+    <Flex direction={"column"} gap={"sm"} justify={"center"}>
       <Title order={1}>About me</Title>
       <Text>
         A coding ninja and A software engineering sensei. I'm a recent software
@@ -18,15 +17,6 @@ const About = () => {
         myself with more programming knowledge, or in a Discord server playing a
         one-shot session of Dungeons & Dragons.
       </Text>
-      <Flex direction={"row"} gap={"sm"} align={"center"}>
-        <Title order={3}>Contact me:</Title>
-        <Button variant={"light"} compact leftIcon={<IconBrandLinkedin />}>
-          LinkedIn
-        </Button>
-        <Button variant={"light"} compact leftIcon={<IconBrandGithub />}>
-          Github
-        </Button>
-      </Flex>
     </Flex>
   );
 };

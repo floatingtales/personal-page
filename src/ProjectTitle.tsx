@@ -2,8 +2,8 @@ import { Center, Flex, Text, Title } from "@mantine/core";
 
 const ProjectTitle = () => {
   return (
-    <Flex direction={"column"} justify={"center"} align={"center"} gap={"sm"}>
-      <Title order={1}>My Works</Title>
+    <Flex align={"center"} direction={"column"} gap={"sm"} justify={"center"}>
+      <Title order={1}>Projects</Title>
       <Text>Stuff I previously did</Text>
     </Flex>
   );
