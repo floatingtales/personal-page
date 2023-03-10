@@ -1,4 +1,4 @@
-import { Center, Flex, Paper, rem, Title, Text, Button } from "@mantine/core";
+import { Center, Flex, Paper, Title, Text, Button } from "@mantine/core";
 
 const SelfNavbar = () => {
   return (

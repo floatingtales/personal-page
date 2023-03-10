@@ -1,12 +1,4 @@
-import {
-  Center,
-  Flex,
-  Header,
-  Paper,
-  Stack,
-  MediaQuery,
-  Footer,
-} from "@mantine/core";
+import { Center, Flex, Header, Paper, MediaQuery, Footer } from "@mantine/core";
 import About from "./About";
 import ProjectTitle from "./ProjectTitle";
 import SelfFooter from "./SelfFooter";
@@ -15,7 +7,7 @@ import SelfTitle from "./SelfTitle";
 
 const App = () => {
   return (
-    <Stack>
+    <Flex direction={"column"}>
       <Header height={"5rem"}>
         <SelfNavbar />
       </Header>
@@ -65,7 +57,7 @@ const App = () => {
       <Footer height={"5rem"}>
         <SelfFooter />
       </Footer>
-    </Stack>
+    </Flex>
   );
 };
 
