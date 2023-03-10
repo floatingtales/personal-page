@@ -1,4 +1,4 @@
-import { Center, Flex, Text, Title } from "@mantine/core";
+import { Flex, Text, Title } from "@mantine/core";
 
 const ProjectTitle = () => {
   return (

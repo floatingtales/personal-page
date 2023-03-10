@@ -1,8 +1,8 @@
 import { Button, Flex, Text, Title } from "@mantine/core";
 import {
-  IconBrandLinkedin,
   IconBrandGithub,
   IconBrandGmail,
+  IconBrandLinkedin,
 } from "@tabler/icons-react";
 
 const Contact = () => {

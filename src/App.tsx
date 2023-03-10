@@ -1,12 +1,11 @@
 import {
+  AppShell,
   Center,
   Flex,
-  Header,
-  Paper,
-  MediaQuery,
   Footer,
-  Navbar,
-  AppShell,
+  Header,
+  MediaQuery,
+  Paper,
 } from "@mantine/core";
 import { useDisclosure, useScrollIntoView } from "@mantine/hooks";
 import About from "./About";

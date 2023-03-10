@@ -1,4 +1,4 @@
-import { Flex, Title, Text } from "@mantine/core";
+import { Flex, Text, Title } from "@mantine/core";
 
 const About = () => {
   return (

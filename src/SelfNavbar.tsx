@@ -1,20 +1,20 @@
 import {
+  Anchor,
+  Burger,
   Center,
   Flex,
+  MediaQuery,
   Paper,
   Title,
-  MediaQuery,
-  Burger,
-  Anchor,
 } from "@mantine/core";
 
 import NavbarProps from "./interfaces/INavbarInterface";
 
 const SelfNavbar = ({
+  opened,
   scrollToAbout,
   scrollToContact,
   scrollToProjects,
-  opened,
   toggle,
 }: NavbarProps) => {
   return (

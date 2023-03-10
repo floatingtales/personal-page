@@ -1,4 +1,5 @@
 import { Anchor, Drawer, Flex } from "@mantine/core";
+import NavbarProps from "./interfaces/INavbarInterface";
 
 const NavbarDrawer = ({
   close,
@@ -6,10 +7,10 @@ const NavbarDrawer = ({
   scrollToAbout,
   scrollToProjects,
   scrollToContact,
-}: any) => {
+}: NavbarProps) => {
   return (
     <Drawer
-      onClose={close}
+      onClose={close!}
       opened={opened}
       overlayProps={{ opacity: 0.5, blur: 4 }}
     >
@@ -21,7 +22,7 @@ const NavbarDrawer = ({
       >
         <Anchor
           onClick={() => {
-            close();
+            close!();
             scrollToAbout({ alignment: "center" });
           }}
           size={"xl"}
@@ -30,7 +31,7 @@ const NavbarDrawer = ({
         </Anchor>
         <Anchor
           onClick={() => {
-            close();
+            close!();
             scrollToProjects({ alignment: "center" });
           }}
           size={"xl"}
@@ -39,7 +40,7 @@ const NavbarDrawer = ({
         </Anchor>
         <Anchor
           onClick={() => {
-            close();
+            close!();
             scrollToContact({ alignment: "center" });
           }}
           size={"xl"}

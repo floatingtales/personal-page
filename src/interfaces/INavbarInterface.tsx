@@ -3,7 +3,8 @@ interface NavbarProps {
   scrollToContact: Function;
   scrollToProjects: Function;
   opened: boolean;
-  toggle: () => void;
+  close?: () => void;
+  toggle?: () => void;
 }
 
 export default NavbarProps;
