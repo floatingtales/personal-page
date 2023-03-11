@@ -15,6 +15,7 @@ import ProjectTitle from "./components/ProjectTitle";
 import SelfFooter from "./components/SiteFooter";
 import SiteHeader from "./components/SiteHeader";
 import SelfTitle from "./components/SelfTitle";
+import ProjectShowcase from "./components/ProjectShowcase";
 
 const App = () => {
   const { scrollIntoView: scrollToAbout, targetRef: targetAbout } =
@@ -93,7 +94,7 @@ const App = () => {
           <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
             <Center h={"90vh"}>
               <Paper w={"95%"}>
-                This is where you put the details of projects
+                <ProjectShowcase />
               </Paper>
             </Center>
           </MediaQuery>

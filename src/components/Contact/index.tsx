@@ -24,6 +24,7 @@ const Contact = () => {
               marginRight: "0.15rem",
             },
           }}
+          target={"_blank"}
           variant={"outline"}
         >
           LinkedIn
@@ -38,6 +39,7 @@ const Contact = () => {
               marginRight: "0.15rem",
             },
           }}
+          target={"_blank"}
           variant={"outline"}
         >
           Github
@@ -52,6 +54,7 @@ const Contact = () => {
               marginRight: "0.15rem",
             },
           }}
+          target={"_blank"}
           variant={"outline"}
         >
           Email
