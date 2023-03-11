@@ -57,6 +57,9 @@ const App = () => {
         scrollToProjects={scrollToProjects}
         scrollToContact={scrollToContact}
       />
+
+      <Space h={"md"} />
+
       <Flex direction={"column"}>
         <Flex
           align={"center"}
@@ -80,7 +83,7 @@ const App = () => {
           </MediaQuery>
         </Flex>
 
-        <Space h={"20vh"} />
+        <Space h={"md"} />
 
         <Flex
           align={"center"}
@@ -102,7 +105,7 @@ const App = () => {
           </MediaQuery>
         </Flex>
 
-        <Space h={"20vh"} />
+        <Space h={"md"} />
 
         <Flex
           align={"center"}
