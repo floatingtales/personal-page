@@ -1,5 +1,5 @@
 import { Anchor, Drawer, Flex } from "@mantine/core";
-import NavbarProps from "../../interfaces/INavbarInterface";
+import NavbarProps from "../../interfaces/INavbarProps";
 
 const NavbarDrawer = ({
   close,

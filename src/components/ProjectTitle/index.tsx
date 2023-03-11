@@ -4,7 +4,7 @@ const ProjectTitle = () => {
   return (
     <Flex align={"center"} direction={"column"} gap={"sm"} justify={"center"}>
       <Title order={1}>Projects</Title>
-      <Text>Stuff I previously did</Text>
+      <Text>AKA. Stuff I made</Text>
     </Flex>
   );
 };

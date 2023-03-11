@@ -1,11 +1,11 @@
 import {
   AppShell,
-  Center,
   Flex,
   Footer,
   Header,
   MediaQuery,
   Paper,
+  Space,
 } from "@mantine/core";
 import { useDisclosure, useScrollIntoView } from "@mantine/hooks";
 import About from "./components/About";
@@ -59,67 +59,69 @@ const App = () => {
       />
       <Flex direction={"column"}>
         <Flex
+          align={"center"}
           direction={{ base: "column", sm: "row" }}
           justify={"space-evenly"}
-          mih={"90vh"}
+          mih={"70vh"}
         >
           <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-            <Center h={"90vh"}>
-              <Paper w={"95%"}>
+            <Paper h={"70vh"} w={"90%"}>
+              <Flex align={"center"} h={"100%"} justify={"center"}>
                 <SelfTitle />
-              </Paper>
-            </Center>
+              </Flex>
+            </Paper>
           </MediaQuery>
           <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-            <Center h={"90vh"} ref={targetAbout}>
-              <Paper w={"95%"}>
+            <Paper h={"70vh"} w={"90%"} ref={targetAbout}>
+              <Flex align={"center"} h={"100%"} justify={"center"}>
                 <About />
-              </Paper>
-            </Center>
+              </Flex>
+            </Paper>
           </MediaQuery>
         </Flex>
 
+        <Space h={"20vh"} />
+
         <Flex
+          align={"center"}
           direction={{ base: "column", sm: "row" }}
           justify={"space-evenly"}
-          mih={"90vh"}
+          mih={"70vh"}
         >
           <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-            <Center h={"90vh"} ref={targetProjects}>
-              <Paper w={"95%"}>
+            <Paper h={"70vh"} w={"90%"}>
+              <Flex align={"center"} h={"100%"} justify={"center"}>
                 <ProjectTitle />
-              </Paper>
-            </Center>
+              </Flex>
+            </Paper>
           </MediaQuery>
           <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-            <Center h={"90vh"}>
-              <Paper w={"95%"}>
-                <ProjectShowcase />
-              </Paper>
-            </Center>
+            <Paper w={"90%"} ref={targetProjects}>
+              <ProjectShowcase />
+            </Paper>
           </MediaQuery>
         </Flex>
 
+        <Space h={"20vh"} />
+
         <Flex
+          align={"center"}
           direction={{ base: "column", sm: "row" }}
           justify={"space-evenly"}
-          mih={"90vh"}
-          w={"100%"}
+          mih={"70vh"}
         >
           <MediaQuery smallerThan={"md"} styles={{ display: "none" }}>
             <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-              <Center h={"90vh"}>
-                <Paper w={"95%"}></Paper>
-              </Center>
+              <Paper w={"90%"}></Paper>
             </MediaQuery>
           </MediaQuery>
 
           <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-            <Center h={"90vh"} ref={targetContact}>
-              <Paper w={"95%"}>
+            <Paper h={"70vh"} w={"90%"} ref={targetContact}>
+              <Flex align={"center"} h={"100%"} justify={"center"}>
                 <Contact />
-              </Paper>
-            </Center>
+              </Flex>
+            </Paper>
           </MediaQuery>
         </Flex>
       </Flex>

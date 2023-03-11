@@ -10,22 +10,19 @@ import {
   Text,
   Title,
 } from "@mantine/core";
+import IProjectDetailsProps from "../../../interfaces/IProjectDetailsProps";
 
-const ProjectDetails = () => {
-  const bgColor = "#6486b9";
-  const imgSource = "/bagelfunds.svg";
-  const projTitle = "Bagelfunds";
-  const projDesc = "An Indonesian style ROSCA/Arisan tracking app";
-  const stackList = ["Bootstrap", "EJS", "Express.js", "Node.js", "PostgreSQL"];
-  const linkList = [
-    {
-      name: "Repo",
-      url: "https://github.com/floatingtales/bagelfunds",
-    },
-  ];
+const ProjectDetails = ({
+  bgColor,
+  imgSource,
+  projTitle,
+  projDesc,
+  stackList,
+  linkList,
+}: IProjectDetailsProps) => {
   return (
     <Card
-      mih={"50vh"}
+      h={"100%"}
       padding={"lg"}
       radius={"md"}
       shadow={"sm"}
@@ -39,7 +36,7 @@ const ProjectDetails = () => {
           justify={"center"}
           h={"15rem"}
         >
-          <Paper w={"35%"} bg={bgColor}>
+          <Paper w={"25%"} bg={bgColor}>
             <Image src={imgSource} withPlaceholder />
           </Paper>
         </Flex>
@@ -50,13 +47,21 @@ const ProjectDetails = () => {
       <Space h={"sm"} />
       <Group spacing={"sm"}>
         {stackList.map((techstack) => (
-          <Badge variant={"outline"}>{techstack}</Badge>
+          <Badge key={techstack} variant={"outline"}>
+            {techstack}
+          </Badge>
         ))}
       </Group>
       <Space h={"md"} />
       <Group spacing={"sm"}>
         {linkList.map((link) => (
-          <Button compact component="a" href={link.url} target="_blank">
+          <Button
+            key={link.url}
+            compact
+            component="a"
+            href={link.url}
+            target="_blank"
+          >
             {link.name}
           </Button>
         ))}

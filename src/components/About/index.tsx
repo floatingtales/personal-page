@@ -5,11 +5,12 @@ const About = () => {
     <Flex direction={"column"} gap={"sm"} justify={"center"}>
       <Title order={1}>About me</Title>
       <Text>
-        A coding ninja and A software engineering sensei. I'm a recent software
-        engineering bootcamp graduate with a love for all things tech. On a
-        mission to build cool stuff and solve big problems, one line at a time!
-        I also teach programming fundamentals! I try to help everyone discover
-        their coding potential, specifically for career switchers!
+        A full-stack coding ninja (Node.js and React) and A software engineering
+        sensei. I'm a recent software engineering bootcamp graduate with a love
+        for all things tech. On a mission to build cool stuff and solve big
+        problems, one line at a time! I also teach programming fundamentals! I
+        try to help everyone discover their coding potential, specifically for
+        career switchers!
       </Text>
       <Text>
         When I'm not teaching or typing away for a project, you'll catch me at

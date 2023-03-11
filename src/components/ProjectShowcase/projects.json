@@ -1,0 +1,100 @@
+[
+  {
+    "bgColor": "#E4CCB0",
+    "imgSource": "./aureus.png",
+    "projTitle": "Aureus",
+    "projDesc": "A spending tracker app for multiple currencies",
+    "stackList": [
+      "ChakraUI",
+      "Chart.js",
+      "Express.js",
+      "JWT",
+      "Luxon",
+      "MongoDB",
+      "Mongoose",
+      "Node.js",
+      "OAuth",
+      "Passport.js",
+      "PWA",
+      "React.js",
+      "Redis",
+      "S3 Bucket",
+      "TypeScript"
+    ],
+    "linkList": [
+      {
+        "name": "Backend Repo",
+        "url": "https://github.com/floatingtales/Aureus-BE"
+      },
+      {
+        "name": "Frontend Repo",
+        "url": "https://github.com/floatingtales/Aureus-FE"
+      }
+    ]
+  },
+  {
+    "bgColor": "#140F0E",
+    "imgSource": "./disaster-dragons.png",
+    "projTitle": "Disaster & Dragons",
+    "projDesc": "A tabletop RPG companion app",
+    "stackList": [
+      "Express.js",
+      "JavaScript",
+      "JWT",
+      "MongoDB",
+      "Mongoose",
+      "MUI",
+      "Node.js",
+      "React.js",
+      "Socket.io"
+    ],
+    "linkList": [
+      {
+        "name": "Repo",
+        "url": "https://github.com/floatingtales/disaster-and-dragons"
+      }
+    ]
+  },
+  {
+    "bgColor": "#556F44",
+    "imgSource": "./tbchess.svg",
+    "projTitle": "Totally Balanced Chess",
+    "projDesc": "A totally randomized chess game app",
+    "stackList": [
+      "Bootstrap",
+      "EJS",
+      "Express.js",
+      "JavaScript",
+      "MVC",
+      "Node.js",
+      "PostgreSQL",
+      "Sequelize"
+    ],
+    "linkList": [
+      {
+        "name": "Repo",
+        "url": "https://github.com/floatingtales/totally-balanced-chess"
+      }
+    ]
+  },
+  {
+    "bgColor": "#6486B9",
+    "imgSource": "./bagelfunds.svg",
+    "projTitle": "Bagelfunds",
+    "projDesc": "An Indonesian style ROSCA/Arisan tracking app",
+    "stackList": [
+      "Bootstrap",
+      "EJS",
+      "Express.js",
+      "JavaScript",
+      "Node.js",
+      "PostgreSQL"
+    ],
+    "linkList": [
+      {
+        "name": "Repo",
+        "url": "https://github.com/floatingtales/bagelfunds"
+      }
+    ]
+  }
+]
