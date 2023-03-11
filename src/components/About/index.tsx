@@ -5,7 +5,7 @@ const About = () => {
     <Flex direction={"column"} gap={"sm"} justify={"center"}>
       <Title order={1}>About me</Title>
       <Text>
-        A full-stack coding ninja (Node.js and React) and A software engineering
+        A full-stack code ninja (Node.js and React) and A software engineering
         sensei. I'm a recent software engineering bootcamp graduate with a love
         for all things tech. On a mission to build cool stuff and solve big
         problems, one line at a time! I also teach programming fundamentals! I

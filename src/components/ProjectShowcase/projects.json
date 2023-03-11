@@ -96,5 +96,22 @@
         "url": "https://github.com/floatingtales/bagelfunds"
       }
     ]
+  },
+  {
+    "bgColor": "#34355F",
+    "imgSource": "./cantrell.png",
+    "projTitle": "Cantrell Poker",
+    "projDesc": "A 16-bit era inspired video poker game",
+    "stackList": ["VanillaJS", "HTML5", "CSS3"],
+    "linkList": [
+      {
+        "name": "Repo",
+        "url": "https://github.com/floatingtales/video-poker"
+      },
+      {
+        "name": "Deployed",
+        "url": "https://floatingtales.github.io/video-poker/"
+      }
+    ]
   }
 ]
