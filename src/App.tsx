@@ -28,17 +28,17 @@ const App = () => {
       offset: 60,
     });
 
-  const [opened, { toggle, open, close }] = useDisclosure(false);
+  const [opened, { toggle, close }] = useDisclosure(false);
 
   return (
     <AppShell
       header={
         <Header height={"5rem"} pos={"static"}>
           <SelfNavbar
+            opened={opened}
             scrollToAbout={scrollToAbout}
             scrollToProjects={scrollToProjects}
             scrollToContact={scrollToContact}
-            opened={opened}
             toggle={toggle}
           />
         </Header>
@@ -102,7 +102,6 @@ const App = () => {
         <Flex
           direction={{ base: "column", sm: "row" }}
           justify={"space-evenly"}
-          align={"center"}
           mih={"90vh"}
           w={"100%"}
         >
