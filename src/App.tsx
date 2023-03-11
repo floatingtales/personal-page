@@ -8,13 +8,13 @@ import {
   Paper,
 } from "@mantine/core";
 import { useDisclosure, useScrollIntoView } from "@mantine/hooks";
-import About from "./About";
-import Contact from "./Contact";
-import NavbarDrawer from "./NavbarDrawer";
-import ProjectTitle from "./ProjectTitle";
-import SelfFooter from "./SelfFooter";
-import SelfNavbar from "./SelfNavbar";
-import SelfTitle from "./SelfTitle";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import NavbarDrawer from "./components/NavbarDrawer";
+import ProjectTitle from "./components/ProjectTitle";
+import SelfFooter from "./components/SiteFooter";
+import SiteHeader from "./components/SiteHeader";
+import SelfTitle from "./components/SelfTitle";
 
 const App = () => {
   const { scrollIntoView: scrollToAbout, targetRef: targetAbout } =
@@ -34,7 +34,7 @@ const App = () => {
     <AppShell
       header={
         <Header height={"5rem"} pos={"static"}>
-          <SelfNavbar
+          <SiteHeader
             opened={opened}
             scrollToAbout={scrollToAbout}
             scrollToProjects={scrollToProjects}

@@ -8,7 +8,7 @@ import {
   Title,
 } from "@mantine/core";
 
-import NavbarProps from "./interfaces/INavbarInterface";
+import NavbarProps from "../../interfaces/INavbarInterface";
 
 const SelfNavbar = ({
   opened,
