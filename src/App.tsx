@@ -58,7 +58,7 @@ const App = () => {
         scrollToContact={scrollToContact}
       />
 
-      <Space h={"md"} />
+      <Space h={"lg"} />
 
       <Flex direction={"column"}>
         <Flex
@@ -68,14 +68,14 @@ const App = () => {
           mih={"70vh"}
         >
           <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-            <Paper h={"70vh"} w={"90%"}>
+            <Paper mih={"70vh"} w={"90%"}>
               <Flex align={"center"} h={"100%"} justify={"center"}>
                 <SelfTitle />
               </Flex>
             </Paper>
           </MediaQuery>
           <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-            <Paper h={"70vh"} w={"90%"} ref={targetAbout}>
+            <Paper mih={"70vh"} w={"90%"} ref={targetAbout}>
               <Flex align={"center"} h={"100%"} justify={"center"}>
                 <About />
               </Flex>
@@ -83,7 +83,7 @@ const App = () => {
           </MediaQuery>
         </Flex>
 
-        <Space h={"md"} />
+        <Space h={"lg"} />
 
         <Flex
           align={"center"}
@@ -92,7 +92,7 @@ const App = () => {
           mih={"70vh"}
         >
           <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-            <Paper h={"70vh"} w={"90%"}>
+            <Paper mih={"70vh"} w={"90%"}>
               <Flex align={"center"} h={"100%"} justify={"center"}>
                 <ProjectTitle />
               </Flex>
@@ -105,7 +105,7 @@ const App = () => {
           </MediaQuery>
         </Flex>
 
-        <Space h={"md"} />
+        <Space h={"lg"} />
 
         <Flex
           align={"center"}
@@ -115,12 +115,12 @@ const App = () => {
         >
           <MediaQuery smallerThan={"md"} styles={{ display: "none" }}>
             <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-              <Paper w={"90%"}></Paper>
+              <Paper mih={"70vh"} w={"90%"}></Paper>
             </MediaQuery>
           </MediaQuery>
 
           <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-            <Paper h={"70vh"} w={"90%"} ref={targetContact}>
+            <Paper mih={"70vh"} w={"90%"} ref={targetContact}>
               <Flex align={"center"} h={"100%"} justify={"center"}>
                 <Contact />
               </Flex>
