@@ -12,9 +12,10 @@ This is the repository for my personal portfolio site. The purpose of this site 
 
 This site is built using these technologies:
 
-- [React.js](https://reactjs.org/)
-- [Vite.js](https://vitejs.dev/)
 - [Mantine](https://mantine.dev/)
+- [React.js](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Vite.js](https://vitejs.dev/)
 
 ## Installation
 
