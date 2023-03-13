@@ -68,18 +68,20 @@ const App = () => {
           mih={"70vh"}
         >
           <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-            <Paper h={"70vh"} w={"90%"}>
-              <Flex align={"center"} h={"100%"} justify={"center"}>
-                <SelfTitle />
-              </Flex>
-            </Paper>
+            <Flex align={"center"} h={"70vh"} justify={"center"} w={"90%"}>
+              <SelfTitle />
+            </Flex>
           </MediaQuery>
           <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-            <Paper h={"70vh"} w={"90%"} ref={targetAbout}>
-              <Flex align={"center"} h={"100%"} justify={"center"}>
-                <About />
-              </Flex>
-            </Paper>
+            <Flex
+              align={"center"}
+              h={"70vh"}
+              justify={"center"}
+              ref={targetAbout}
+              w={"90%"}
+            >
+              <About />
+            </Flex>
           </MediaQuery>
         </Flex>
 
@@ -92,14 +94,12 @@ const App = () => {
           mih={"70vh"}
         >
           <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-            <Paper h={"70vh"} w={"90%"}>
-              <Flex align={"center"} h={"100%"} justify={"center"}>
-                <ProjectTitle />
-              </Flex>
-            </Paper>
+            <Flex align={"center"} h={"70vh"} justify={"center"} w={"90%"}>
+              <ProjectTitle />
+            </Flex>
           </MediaQuery>
           <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-            <Paper w={"90%"} ref={targetProjects}>
+            <Paper w={"90%"} ref={targetProjects} bg={"transparent"}>
               <ProjectShowcase />
             </Paper>
           </MediaQuery>
@@ -115,16 +115,26 @@ const App = () => {
         >
           <MediaQuery smallerThan={"md"} styles={{ display: "none" }}>
             <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-              <Paper h={"70vh"} w={"90%"}></Paper>
+              <Flex
+                align={"center"}
+                h={"70vh"}
+                justify={"center"}
+                ref={targetContact}
+                w={"90%"}
+              ></Flex>
             </MediaQuery>
           </MediaQuery>
 
           <MediaQuery largerThan={"sm"} styles={{ width: "45vw" }}>
-            <Paper h={"70vh"} w={"90%"} ref={targetContact}>
-              <Flex align={"center"} h={"100%"} justify={"center"}>
-                <Contact />
-              </Flex>
-            </Paper>
+            <Flex
+              align={"center"}
+              h={"70vh"}
+              justify={"center"}
+              ref={targetContact}
+              w={"90%"}
+            >
+              <Contact />
+            </Flex>
           </MediaQuery>
         </Flex>
       </Flex>
