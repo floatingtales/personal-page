@@ -3,8 +3,10 @@ import { Carousel } from "@mantine/carousel";
 import { IconBrandGithub } from "@tabler/icons-react";
 import ProjectDetails from "./projectDetails";
 import projectArr from "./projects.json";
+import Autoplay from "embla-carousel-autoplay";
 
 const ProjectShowcase = () => {
+  const autoplay = Autoplay({ delay: 4000 });
   return (
     <Flex
       align={"center"}
@@ -16,9 +18,13 @@ const ProjectShowcase = () => {
       <Carousel
         mih={"50vh"}
         mx={"auto"}
+        onMouseEnter={autoplay.stop}
+        onMouseLeave={autoplay.reset}
+        plugins={[autoplay]}
         slideGap={"md"}
         slideSize={"100%"}
         w={"95%"}
+        withControls={false}
         withIndicators
       >
         {projectArr.map((project) => (
@@ -34,6 +40,7 @@ const ProjectShowcase = () => {
           </Carousel.Slide>
         ))}
       </Carousel>
+      <Text italic>psst, this showcase is slidable</Text>
       <Text>See my other projects on</Text>
       <Button
         compact
