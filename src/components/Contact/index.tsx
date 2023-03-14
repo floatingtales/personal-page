@@ -7,7 +7,7 @@ import {
 
 const Contact = () => {
   return (
-    <Flex direction={"column"} gap={"sm"} justify={"center"}>
+    <Flex direction={"column"} gap={"sm"} w={"100%"}>
       <Title>Heya!</Title>
       <Text>
         Wanna work together? Or just have a slice of pizza and talk tech?
