@@ -4,6 +4,7 @@ import { IconBrandGithub } from "@tabler/icons-react";
 import ProjectDetails from "./projectDetails";
 import projectArr from "./projects.json";
 import Autoplay from "embla-carousel-autoplay";
+import { EmblaPluginType } from "embla-carousel-react";
 
 const ProjectShowcase = () => {
   const autoplay = Autoplay({ delay: 4000 });
@@ -16,11 +17,12 @@ const ProjectShowcase = () => {
       justify={"center"}
     >
       <Carousel
+        loop
         mih={"50vh"}
         mx={"auto"}
         onMouseEnter={autoplay.stop}
         onMouseLeave={autoplay.reset}
-        plugins={[autoplay]}
+        plugins={[autoplay as unknown as EmblaPluginType]}
         slideGap={"md"}
         slideSize={"100%"}
         w={"95%"}
