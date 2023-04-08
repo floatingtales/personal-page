@@ -18,6 +18,7 @@ const ProjectShowcase = () => {
     >
       <Carousel
         loop
+        h={"100%"}
         mih={"50vh"}
         mx={"auto"}
         onMouseEnter={autoplay.stop}
